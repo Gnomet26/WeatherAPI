@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': 'backent',
         'USER': 'NUgoqPVa0jClJnHTf2knxvE2oCc4ZrSC',
         'PASSWORD': 'NUgoqPVa0jClJnHTf2knxvE2oCc4ZrSC',
-        'HOST': 'dpg-d2aqv8fdiees73e2vbl0-a',  # misol: dpg-xxxxx.render.com
+        'HOST': 'dpg-d2aqv8fdiees73e2vbl0-a.oregon-postgres.render.com',  # misol: dpg-xxxxx.render.com
         'PORT': '5432',  # PostgreSQL standarti
     }
 }
