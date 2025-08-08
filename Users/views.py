@@ -10,7 +10,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 class TestView(APIView):
     permission_classes = [AllowAny]
     def get(self, request):
-        return Response({"message":"Ishlayapti"}, status = status=status.HTTP_200_OK)
+        return Response({"message":"Ishlayapti"}, status = status.HTTP_200_OK)
 
 class RegisterView(APIView):
 
