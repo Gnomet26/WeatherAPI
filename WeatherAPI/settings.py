@@ -93,10 +93,16 @@ WSGI_APPLICATION = 'WeatherAPI.wsgi.application'
 # Database (Render uchun Postgres URL)
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get("DATABASE_URL")
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'backent',
+        'USER': 'NUgoqPVa0jClJnHTf2knxvE2oCc4ZrSC',
+        'PASSWORD': 'NUgoqPVa0jClJnHTf2knxvE2oCc4ZrSC',
+        'HOST': 'dpg-d2aqv8fdiees73e2vbl0-a',  # misol: dpg-xxxxx.render.com
+        'PORT': '5432',  # PostgreSQL standarti
+    }
 }
+
 
 # Custom User Model
 
