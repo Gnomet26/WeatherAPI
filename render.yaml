@@ -1,25 +1,6 @@
 services:
   - type: web
-    name: weather-api
+    name: django-migrate
     env: python
-    plan: free
-    buildCommand: |
-      pip install -r requirements.txt
-      python manage.py collectstatic --noinput
-      python manage.py migrate
-    startCommand: gunicorn WeatherAPI.wsgi:application
-    envVars:
-      - key: DEBUG
-        value: "False"
-      - key: DJANGO_SETTINGS_MODULE
-        value: WeatherAPI.settings
-      - key: SECRET_KEY
-        generateValue: true
-      - fromDatabase:
-          name: weather-api-db
-          property: connectionString
-          key: DATABASE_URL
-
-databases:
-  - name: weather-api-db
-    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python manage.py migrate
