@@ -1,6 +1,1 @@
-services:
-  - type: web
-    name: django-migrate
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python manage.py migrate
+
