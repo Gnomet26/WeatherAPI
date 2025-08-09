@@ -18,24 +18,15 @@ WeatherAPI loyihasi JWT token asosida ishlaydigan autentifikatsiya tizimini yara
 - OpenWeatherMap API
 
 ## O‘rnatish va ishga tushirish  
-1. Loyiha kodini yuklab olish:  
-   ```bash  
-   git clone <repository_url>  
-   cd WeatherAPI  
-##Virtual muhit yaratish va faollashtirish:
-python3 -m venv venv  
-source venv/bin/activate  # Linux/macOS  
-venv\Scripts\activate     # Windows  
+Quyidagi buyruqlarni ketma-ket terminalga yozib, loyihani ishga tushiring:
 
-##Kerakli paketlarni o‘rnatish:
-pip install -r requirements.txt  
-
-##PostgreSQL serverni ishga tushurish va baza yaratish
-
-##Migratsiyalarni bajarish:
-python3 manage.py migrate  
-
-##Serverni ishga tushirish:
-python3 manage.py runserver 0.0.0.0:8000  
-
-
+```bash
+git clone <repository_url>
+cd WeatherAPI
+python3 -m venv venv
+source venv/bin/activate  # Linux/macOS
+# Windows uchun: venv\Scripts\activate
+pip install -r requirements.txt
+# PostgreSQL serverni ishga tushiring va kerakli bazani yarating
+python3 manage.py migrate
+python3 manage.py runserver 0.0.0.0:8000
